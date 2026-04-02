@@ -22,7 +22,6 @@ webtechnologie/
 ```
 
 - Gebruik steeds JS modules om globale variabelen te vermijden (`<script type="module" src="./path/to/script.js"></script>`)
-- Zet je Javascript file steeds in strict mode (`"use strict"`);
 - Volg de [Coding Guidelines](https://apwt.gitbook.io/webtechnologie/coding-guidelines)
 - Maak voor elke oefening een aparte map. Volg de bovenstaande folderstructuur.
 
@@ -207,16 +206,16 @@ Deze oefening laat zien hoe je dynamisch nieuwe elementen aan een pagina kunt to
 - Kopieer deze voor elke oefening.
 - In je browser zou je het volgende moeten zien als je de pagina opent: ![startbestand](./startbestand.png)
 
-### Oefening 9 - Formuliervalidatie
+### oefening 9: formuliervalidatie
 
 Je zal het formulier afhandelen in JavaScript.
 
-### functionele analyse
+#### functionele analyse
 
 * Zorg dat een error-bericht wordt getoont wanneer een veld niet ingevuld is.
 * Zorg dat een success-bericht wordt getoont wanneer alle velden juist ingevuld zijn met daarin de waardes van het name, email en message veld.
 
-### technische analyse
+#### technische analyse
 
 * Maak een bestand form.js.
 * Koppel het bestand form.js aan de index.html.
@@ -227,15 +226,15 @@ Je zal het formulier afhandelen in JavaScript.
 * ingevuld: geef een succesmelding
 * Toon de ingevulde waarden aan de gebruiker via een `alert`.
 
-### voorbeeldinteractie
+#### voorbeeldinteractie
 
 ![voorbeeldinteractie](./form.gif)
 
 ![alert na submit](./form-submit.png)
 
-### Oefening 10 - Frequently Asked Questions sectie (FAQ)
+### oefening 10: frequently asked questions sectie (FAQ)
 
-### functionele analyse
+#### functionele analyse
 
 * Maak een inklapbare FAQ met behulp van JavaScript.
 * Voeg HTML toe zoals visueel weergegeven in de voorbeeldinteractie.
@@ -243,7 +242,7 @@ Je zal het formulier afhandelen in JavaScript.
 * een button met class `collapsible`
 * een p-element met class `context`
 
-### technische analyse
+#### technische analyse
 
 * Haal in faq.js alle elementen op met de klasse 'collapsible' en gebruik hierbij querySelectorAll.
 * Loop over de array van elementen.
@@ -251,13 +250,13 @@ Je zal het formulier afhandelen in JavaScript.
 * Als er op een ingeklapt element wordt geklikt, wordt de inhoud zichtbaar.
 * Als er op een opengeklapt element wordt geklikt, wordt de inhoud onzichtbaar.
 
-### voorbeeldinteractie
+#### voorbeeldinteractie
 
 ![voorbeeldinteractie](./faq.gif)
 
-### Oefening 11 - Social media icons
+### oefening 11: social media icons
 
-### functionele analyse
+#### functionele analyse
 
 * Plaats de social media icons op het scherm vanuit JavaScript
 * Voeg HTML toe zoals visueel weergegeven in de voorbeeldinteractie.
@@ -266,7 +265,7 @@ Je zal het formulier afhandelen in JavaScript.
   * een a-element met een juiste link
   * een img-element met een juist icoon
 
-### technische analyse
+#### technische analyse
 
 * Maak een `socials.js`-bestand aan en plaats hierin de volgende arrays:
 ```javascript
@@ -283,6 +282,6 @@ const socialLinks = ["https://www.youtube.com", "https://www.instagram.com/", "h
 </li>
  ```
 
-### voorbeeldinteractie
+#### voorbeeldinteractie
 
 ![voorbeeldinteractie](./socials.png)
