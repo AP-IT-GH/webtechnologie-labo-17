@@ -42,7 +42,7 @@ Jouw programma gaat de titel op een website aanpassen naar de inhoud van een var
 
 In jouw HTML voorzie je een h1-element met als tekst "Hello world!".
 
-Plaats in jouw code de tekst "Welkom op onze website" in een `const`. Gebruik deze `const` om de `h1` op de website aan te passen.
+Plaats in jouw code de tekst "Welkom op onze website" in een variabele. Gebruik deze om de inhoud van de `h1` op de website aan te passen.
 
 #### voorbeeldinteractie
 
@@ -61,9 +61,8 @@ Lees de waarde van het "src"-attribuut van een afbeelding en toon deze in de con
 
 #### technische analyse
 
-Voeg in jouw HTML een img-element toe met een id, bijvoorbeeld "myImage", en een standaardbron, bijvoorbeeld "afbeelding.png".
-
-In jouw JavaScript-code selecteer je dit img-element op basis van het id "myImage" en lees je de waarde van het "src"-attribuut. Toon deze waarde vervolgens in de console.
+Voeg in jouw HTML een img-element toe met een id en een src attribuut die wijst naar een afbeelding. Je kunt gebruik maken van een placeholder.co afbeelding (bv. https://placehold.co/600x400?text=Hello+World)
+In jouw JavaScript-code selecteer je dit img-element op basis van het id en lees je de waarde van het "src"-attribuut. Toon deze waarde vervolgens in de console.
 
 #### voorbeeldinteractie
 
@@ -82,17 +81,17 @@ Je moet de bron van een afbeelding wijzigen op basis van een variabele.
 
 #### technische analyse
 
-In jouw HTML heb je een img-element met een id "myImage" en een standaardbron, bijvoorbeeld "afbeelding.png".
+In jouw HTML heb je een img-element met een id en een standaardbron, bijvoorbeeld "https://placehold.co/600x400?text=Hello+World".
 
-Maak in jouw JavaScript-code een variabele met de naam `newSource` en wijs hieraan een nieuwe afbeeldings-URL toe.
+Maak in jouw JavaScript-code een variabele met de naam `newSource` en wijs hieraan een nieuwe afbeeldings-URL toe (bv. https://placehold.co/600x400?text=Nieuw).
 
-Selecteer het img-element op de pagina op basis van het id "myImage" en wijzig het attribuut "src" naar de waarde van de variabele `newSource`. Zo moet de afbeelding op de website veranderen afhankelijk van de nieuwe bron die je hebt opgegeven.
+Selecteer het img-element op de pagina op basis van het id en wijzig het attribuut "src" naar de waarde van de variabele `newSource`. Zo moet de afbeelding op de website veranderen afhankelijk van de nieuwe bron die je hebt opgegeven.
 
 #### voorbeeldinteractie
 
 ![voorbeeldinteractie](./voorbeeldinteractie-attributen-wijzigen.avif)
 
-### oefening 4: stijlen aanpassen
+### oefening 4: style rechtstreeks aanpassen
 
 #### leerdoelen
 
@@ -105,11 +104,9 @@ Pas de tekstkleur van een alinea aan op basis van een variabele.
 
 #### technische analyse
 
-Voeg in jouw HTML een paar p-elementen toe met verschillende tekstinhoud en verschillende klasses, bijvoorbeeld `.red`.
+Voeg in jouw HTML 2 `p`-elementen toe met verschillende tekstinhoud en verschillende classes.
 
-Maak een variabele met de naam `red` en wijs hieraan een kleurwaarde toe, bijvoorbeeld "rood".
-
-Selecteer de p-elementen op de pagina op basis van de klasse en pas de tekstkleur aan naar de waarde van de variabele. Hierdoor moeten de paragrafen een nieuwe tekstkleur hebben.
+Selecteer de p-elementen op de pagina op basis van de classes en pas de tekstkleur aan naar een nieuwe waarde (kies voor hex of rgb notatie). Hierdoor moeten de paragrafen een nieuwe tekstkleur hebben.
 
 #### voorbeeldinteractie
 
@@ -129,55 +126,13 @@ Verwijder een item uit een lijst.
 
 In jouw HTML, creëer een ongeordende lijst (ul) met enkele lijstitems (li).
 
-Selecteer een bestaand lijstitem (je kunt bijvoorbeeld het eerste lijstitem selecteren) en verwijder dit item uit de lijst.
+Selecteer een bestaand lijstitem (bv. het eerste) en verwijder dit item uit de lijst.
 
 #### voorbeeldinteractie
 
 ![voorbeeldinteractie](./voorbeeldinteractie-element-verwijderen.avif)
 
-### oefening 6: tekstinhoud lezen
-
-#### leerdoelen
-
-* een HTML-element selecteren op basis van tag
-* de inhoud van een HTML-element lezen
-
-#### functionele analyse
-
-Lees de tekstinhoud van een paragraaf en toon deze in de console.
-
-#### technische analyse
-
-Voeg in jouw HTML een p-element toe met wat tekstinhoud.
-
-In jouw JavaScript-code, selecteer dit p-element op basis van de tag en lees de tekstinhoud ervan. Toon deze tekst vervolgens in de console.
-
-#### voorbeeldinteractie
-
-![voorbeeldinteractie](./voorbeeldinteractie-tekstinhoud-lezen.avif)
-
-### oefening 7: stijlen lezen
-
-#### leerdoelen
-
-* een HTML-element selecteren op basis van id
-* stijlinformatie van een HTML-element lezen
-
-#### functionele analyse
-
-Lees de achtergrondkleur van een div-element met een specifieke id en toon deze in de console.
-
-#### technische analyse
-
-Voeg in jouw HTML een div-element toe met een id, bijvoorbeeld `bg-grey`, en pas wat stijlen toe, zoals achtergrondkleur.
-
-In jouw JavaScript-code, selecteer dit div-element op basis van de id en lees de achtergrondkleur. Toon deze kleur vervolgens in de console.
-
-#### voorbeeldinteractie
-
-![voorbeeldinteractie](./voorbeeldinteractie-stijlen-lezen.avif)
-
-### oefening 8: elementen toevoegen
+### oefening 6: elementen toevoegen
 
 #### leerdoelen
 
@@ -200,9 +155,51 @@ Deze oefening laat zien hoe je dynamisch nieuwe elementen aan een pagina kunt to
 
 ![voorbeeldinteractie](./voorbeeldinteractie-elementen-toevoegen.avif)
 
-## Oefeningen DOM manipulatie (gevorderd)
+### oefening 7: tekstinhoud lezen
 
-- De nodige bestanden staan reeds klaar in deze repository (startbestanden-gevorderd)
+#### leerdoelen
+
+* een HTML-element selecteren op basis van tag
+* de inhoud van een HTML-element lezen
+
+#### functionele analyse
+
+Lees de tekstinhoud van een paragraaf en toon deze in de console.
+
+#### technische analyse
+
+Voeg in jouw HTML een p-element toe met wat tekstinhoud.
+
+In jouw JavaScript-code, selecteer dit p-element op basis van de tag en lees de tekstinhoud ervan. Toon deze tekst vervolgens in de console.
+
+#### voorbeeldinteractie
+
+![voorbeeldinteractie](./voorbeeldinteractie-tekstinhoud-lezen.avif)
+
+### oefening 8: stijlen lezen
+
+#### leerdoelen
+
+* een HTML-element selecteren op basis van id
+* stijlinformatie van een HTML-element lezen
+
+#### functionele analyse
+
+Lees de achtergrondkleur van een div-element met een specifieke id en toon deze in de console.
+
+#### technische analyse
+
+Voeg in jouw HTML een div-element toe met een id, bijvoorbeeld `bg-grey`, en pas wat stijlen toe, zoals achtergrondkleur.
+
+In jouw JavaScript-code, selecteer dit div-element op basis van de id en lees de achtergrondkleur. Toon deze kleur vervolgens in de console.
+
+#### voorbeeldinteractie
+
+![voorbeeldinteractie](./voorbeeldinteractie-stijlen-lezen.avif)
+
+## Oefeningen DOM manipulatie
+
+- De nodige bestanden staan reeds klaar in deze repository (startbestanden-9-11)
 - Kopieer deze voor elke oefening.
 - In je browser zou je het volgende moeten zien als je de pagina opent: ![startbestand](./startbestand.png)
 
