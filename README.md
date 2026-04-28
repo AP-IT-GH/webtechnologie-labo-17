@@ -199,59 +199,10 @@ In jouw JavaScript-code, selecteer dit div-element op basis van de id en lees de
 
 ## Oefeningen DOM manipulatie
 
-- De nodige bestanden staan reeds klaar in deze repository (startbestanden-9-11)
-- Kopieer deze voor elke oefening.
+- De nodige bestanden staan reeds klaar in deze repository (startbestanden-9)
 - In je browser zou je het volgende moeten zien als je de pagina opent: ![startbestand](./startbestand.png)
 
-### oefening 9: formuliervalidatie
-
-Je zal het formulier afhandelen in JavaScript.
-
-#### functionele analyse
-
-* Zorg dat een error-bericht wordt getoont wanneer een veld niet ingevuld is.
-* Zorg dat een success-bericht wordt getoont wanneer alle velden juist ingevuld zijn met daarin de waardes van het name, email en message veld.
-
-#### technische analyse
-
-* Maak een bestand form.js.
-* Koppel het bestand form.js aan de index.html.
-* Geef het form-element een id en haal het op in je form.js met querySelector.
-* Voeg een submit-eventlistener toe aan form.
-* Haal de 3 velden op en kijk na of ze zijn ingevuld.
-* niet ingevuld: geef een foutmelding
-* ingevuld: geef een succesmelding
-* Toon de ingevulde waarden aan de gebruiker via een `alert`.
-
-#### voorbeeldinteractie
-
-![voorbeeldinteractie](./form.gif)
-
-![alert na submit](./form-submit.png)
-
-### oefening 10: frequently asked questions sectie (FAQ)
-
-#### functionele analyse
-
-* Maak een inklapbare FAQ met behulp van JavaScript.
-* Voeg HTML toe zoals visueel weergegeven in de voorbeeldinteractie.
-* Elk inklapbaar element bestaat uit:
-* een button met class `collapsible`
-* een p-element met class `context`
-
-#### technische analyse
-
-* Haal in faq.js alle elementen op met de klasse 'collapsible' en gebruik hierbij querySelectorAll.
-* Loop over de array van elementen.
-* Voeg voor elk element een 'click' eventlistener toe.
-* Als er op een ingeklapt element wordt geklikt, wordt de inhoud zichtbaar.
-* Als er op een opengeklapt element wordt geklikt, wordt de inhoud onzichtbaar.
-
-#### voorbeeldinteractie
-
-![voorbeeldinteractie](./faq.gif)
-
-### oefening 11: social media icons
+### oefening 9: social media icons
 
 #### functionele analyse
 
@@ -264,10 +215,14 @@ Je zal het formulier afhandelen in JavaScript.
 
 #### technische analyse
 
-* Maak een `socials.js`-bestand aan en plaats hierin de volgende arrays:
+* Maak een `socials.js`-bestand aan en plaats hierin de volgende array:
 ```javascript
-const socialPlatforms = ["youtube", "instagram", "facebook", "twitter"];
-const socialLinks = ["https://www.youtube.com", "https://www.instagram.com/", "https://www.facebook.com/", "https://twitter.com/"];
+const socials = [
+  { platform: "youtube", link: "https://www.youtube.com" },
+  { platform: "instagram", link: "https://www.instagram.com/" },
+  { platform: "facebook", link: "https://www.facebook.com/" },
+  { platform: "twitter", link: "https://twitter.com/" },
+];
 ```
 
 * Selecteer het `ul`-element met ID `socials` en voeg hier met behulp van JavaScript per social media platform de nodige elementen aan toe, bijvoorbeeld:
